@@ -1,0 +1,4 @@
+run,source,extracted_at,sha256_12,rows_landed
+night2,marine_shipments.csv,2026-11-04T02:41:44,58c81f28706a,12
+night2,rail_shipments.xlsx,2026-11-04T02:41:44,d401dceb0625,10
+night2,road_shipments.csv,2026-11-04T02:41:44,bb4efd15f130,17

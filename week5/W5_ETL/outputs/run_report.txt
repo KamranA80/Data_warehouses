@@ -1,0 +1,56 @@
+PakFreight Week 5 - ETL run | Kamran Khan Hussain | BSDS030 | 7A
+run started 2026-11-04 02:41:43
+
+E3 extract log (night1)
+   run               source        extracted_at    sha256_12  rows_landed
+night1 marine_shipments.csv 2026-11-04T02:41:43 58c81f28706a           12
+night1  rail_shipments.xlsx 2026-11-04T02:41:43 d401dceb0625           10
+night1   road_shipments.csv 2026-11-04T02:41:43 d00fa7957ebb           15
+
+row ladder (T4 part A), night1
+  marine, as extracted                      12      206,500      1,618,000
+  rail, as extracted                        10      295,250      2,585,000
+  road, as extracted (15 land, 13 real)     15       83,000        652,000
+  raw rows landed in staging                37                            
+  appended                                  35      584,750      4,855,000
+  loaded into FactShipment                  34      578,650      4,808,000
+  duplicates removed: ['RD-505']
+
+the eight checks - night1 (check 6 is counted, not asserted)
+  #  check                                               got                   expected              result
+  1  contract columns in each query (marine/rail/road)   (7, 7, 7)             (7, 7, 7)             pass
+  2  rail subtotal kg, before the append                 295250                295250                pass
+  3  distinct StatusRaw                                  3                     3                     pass
+  4  months present in ShipDate (set, not a list)        {2}                   {2}                   pass
+  4  latest day in ShipDate                              13                    13                    pass
+  5  rows in FactShipment                                34                    34                    pass
+  7  SUM(WeightKG)                                       578650                578650                pass
+  8  SUM(FreightCostPKR)                                 4808000               4808000               pass
+  6  rows routed to Unknown (-1): 0
+
+step 9 - keys beyond the cities
+  rows with StatusKey = -1: 0 | RouteKey = -1: 0
+  distinct city pairs in the fact: 20; Week 4 DimRoute pairs (excl. Unknown): 20; identical sets: True
+
+==============================================================================
+REFRESH TEST - same code, source pointed at source/night2, nothing edited
+   run               source        extracted_at    sha256_12  rows_landed
+night2 marine_shipments.csv 2026-11-04T02:41:44 58c81f28706a           12
+night2  rail_shipments.xlsx 2026-11-04T02:41:44 d401dceb0625           10
+night2   road_shipments.csv 2026-11-04T02:41:44 bb4efd15f130           17
+
+  refresh check                              got    expected  result
+  rows in FactShipment                        35          35  pass
+  SUM(WeightKG)                          584,950     584,950  pass
+  SUM(FreightCostPKR)                  4,860,000   4,860,000  pass
+  distinct StatusRaw                           3           3  pass
+  rows carrying a -1 city key                  1           1  pass
+  rows with status Delayed                     5           5  pass
+  unresolved spellings -> -1 : [('OriginRaw', 'RD-513', 'Chaman Border')]
+  duplicates removed on night2: ['RD-505', 'RD-508']
+
+source files byte-for-byte unchanged after both runs
+
+SUMMARY
+  night1: 34 rows | 578,650 kg | PKR 4,808,000 | rows on -1 key: 0
+  night2: 35 rows | 584,950 kg | PKR 4,860,000 | rows on -1 key: 1

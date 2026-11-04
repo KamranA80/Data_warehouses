@@ -1,0 +1,61 @@
+ShipmentID,RemovedFile,RemovedLine,KeptFile,KeptLine,Kind
+MR-2181,marine_march.csv,95,marine_march.csv,90,trailing space
+MR-2174,marine_march.csv,153,marine_march.csv,39,byte-identical
+MR-2184,marine_march.csv,154,marine_march.csv,49,trailing space
+MR-2185,marine_march.csv,162,marine_march.csv,60,byte-identical
+MR-2086,marine_march.csv,170,marine_march.csv,160,byte-identical
+MR-2144,marine_march.csv,181,marine_march.csv,17,byte-identical
+MR-2017,marine_march.csv,182,marine_march.csv,86,byte-identical
+MR-2178,marine_march.csv,194,marine_march.csv,156,trailing space
+MR-2021,marine_march.csv,198,marine_march.csv,78,byte-identical
+MR-2027,marine_march.csv,232,marine_march.csv,30,byte-identical
+MR-2189,marine_march.csv,233,marine_march.csv,59,byte-identical
+MR-2187,marine_march.csv,235,marine_march.csv,187,byte-identical
+MR-2133,marine_march.csv,247,marine_march.csv,208,byte-identical
+MR-2040,marine_march.csv,250,marine_march.csv,56,trailing space
+RL-46121,rail_march.xlsx,130,rail_march.xlsx,6,byte-identical
+RL-46133,rail_march.xlsx,131,rail_march.xlsx,15,byte-identical
+RL-46030,rail_march.xlsx,134,rail_march.xlsx,8,trailing space
+RL-46240,rail_march.xlsx,152,rail_march.xlsx,76,byte-identical
+RL-46064,rail_march.xlsx,153,rail_march.xlsx,70,byte-identical
+RL-46230,rail_march.xlsx,173,rail_march.xlsx,16,byte-identical
+RL-46144,rail_march.xlsx,213,rail_march.xlsx,105,byte-identical
+RL-46295,rail_march.xlsx,243,rail_march.xlsx,23,byte-identical
+RL-46187,rail_march.xlsx,273,rail_march.xlsx,262,byte-identical
+RL-46269,rail_march.xlsx,297,rail_march.xlsx,235,trailing space
+RD-5405,road_march.csv,62,road_march.csv,44,byte-identical
+RD-5338,road_march.csv,106,road_march.csv,73,byte-identical
+RD-5457,road_march.csv,128,road_march.csv,54,trailing space
+RD-5015,road_march.csv,164,road_march.csv,129,byte-identical
+RD-5351,road_march.csv,167,road_march.csv,161,byte-identical
+RD-5027,road_march.csv,245,road_march.csv,240,byte-identical
+RD-5047,road_march.csv,287,road_march.csv,192,byte-identical
+RD-5376,road_march.csv,293,road_march.csv,72,trailing space
+RD-5198,road_march.csv,303,road_march.csv,262,byte-identical
+RD-5628,road_march.csv,324,road_march.csv,179,byte-identical
+RD-5393,road_march.csv,335,road_march.csv,11,trailing space
+RD-5169,road_march.csv,336,road_march.csv,310,byte-identical
+RD-5548,road_march.csv,370,road_march.csv,21,byte-identical
+RD-5410,road_march.csv,373,road_march.csv,45,byte-identical
+RD-5570,road_march.csv,411,road_march.csv,42,byte-identical
+RD-5160,road_march.csv,412,road_march.csv,323,byte-identical
+RD-5468,road_march.csv,414,road_march.csv,122,byte-identical
+RD-5523,road_march.csv,438,road_march.csv,321,trailing space
+RD-5211,road_march.csv,448,road_march.csv,391,byte-identical
+RD-5389,road_march.csv,506,road_march.csv,477,byte-identical
+RD-5573,road_march.csv,520,road_march.csv,89,byte-identical
+RD-5565,road_march.csv,522,road_march.csv,418,byte-identical
+RD-5001,road_march.csv,529,road_march.csv,278,byte-identical
+RD-5563,road_march.csv,535,road_march.csv,319,byte-identical
+RD-5454,road_march.csv,548,road_march.csv,422,byte-identical
+RD-5463,road_march.csv,559,road_march.csv,527,byte-identical
+RD-5187,road_march.csv,560,road_march.csv,168,byte-identical
+RD-5166,road_march.csv,569,road_march.csv,461,byte-identical
+RD-5395,road_march.csv,574,road_march.csv,4,byte-identical
+RD-5203,road_march.csv,584,road_march.csv,142,byte-identical
+RD-5106,road_march.csv,585,road_march.csv,10,byte-identical
+RD-5069,road_march.csv,596,road_march.csv,374,byte-identical
+RD-5427,road_march.csv,627,road_march.csv,482,byte-identical
+RD-5643,road_march.csv,656,road_march.csv,239,trailing space
+RD-5008,road_march.csv,672,road_march.csv,302,trailing space
+RD-5605,road_march.csv,700,road_march.csv,117,byte-identical

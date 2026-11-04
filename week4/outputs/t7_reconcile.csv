@@ -1,0 +1,14 @@
+Check,Computed,Expected,Pass
+Relationships in the model,6,6,True
+Relationships with cardinality * : 1,6,6,True
+Relationships with cross-filter Single,6,6,True
+Active relationships,5,5,True
+Inactive relationships,1,1,True
+Rows in FactShipment,34,34,True
+SUM of WeightKG,578650,578650,True
+SUM of FreightCostPKR,4808000,4808000,True
+Blank rows across all five dimensions,0,0,True
+Distinct origin provinces in the fact,4,4,True
+WeightKG for Sindh origins,484350,484350,True
+WeightKG for Punjab origins,44100,44100,True
+WeightKG for Balochistan origins,44100,44100,True

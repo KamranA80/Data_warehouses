@@ -1,0 +1,8 @@
+Stage,Rows,SumWeight,SumCost
+"marine_march.csv, as extracted",261,4683000.0,35571000.0
+"rail_march.xlsx, as extracted",315,9218.25,88702500.0
+"road_march.csv, as extracted",708,4487200.0,32259500.0
+"staging, all three appended",1284,,
+rejected,24,,
+removed as duplicate,60,,
+loaded into FactShipment_March,1200,17542050.0,147037000.0

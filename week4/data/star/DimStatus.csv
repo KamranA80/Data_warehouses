@@ -1,0 +1,5 @@
+StatusKey,StatusName
+1,Delivered
+2,In Transit
+3,Delayed
+-1,Unknown

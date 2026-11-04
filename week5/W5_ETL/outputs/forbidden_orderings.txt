@@ -1,0 +1,10 @@
+The forbidden orderings, reproduced (not quoted)
+  1. append before rename      -> 20 columns, rows 37, no error raised
+  3. tons left unconverted     -> SUM(WeightKG) = 283,695.25  (short by 294,954.75)
+  2. dedup before trim (night2) -> 36 rows / 591,550 kg instead of 35 / 584,950
+     same wrong order on night1 -> road keeps 12 of 13 rows (RD-505 is byte-identical), so the file can never tell you
+  4. en-US read of marine dates -> wrong month 10, right by luck 1, error 1, distinct months 11
+  5. no dedup at all           -> 35 rows, 584,750 kg (+6,100)
+  6. TOTAL footer left in      -> 35 rows, 661,650 kg (+83,000)
+  7. blank road row left in    -> 35 rows, 578,650 kg (both totals still exact, COUNTROWS is the only thing that moves)
+  8. inner join on night2      -> 34 rows, 578,650 kg, PKR 4,808,000 (night one's totals to the unit, so it even looks reconciled)
